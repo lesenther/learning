@@ -1,0 +1,33 @@
+h3 {
+  margin-top: 0;
+}
+
+.rating {
+  max-width: 97px;
+  font-size: 1.8em;
+  padding-top: 8px;
+}
+.rating-1 {
+  color: red;
+}
+.rating-2 {
+  color: red;
+}
+.rating-3 {
+  color: gray;
+}
+.rating-4 {
+  color: red;
+}
+.rating-5 {
+  color: green;
+}
+
+.col-sm-8 li {
+  padding-bottom: 1em;
+}
+
+html, body {
+  background: #111;
+  color: #888;
+}
