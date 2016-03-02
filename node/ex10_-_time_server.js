@@ -16,4 +16,5 @@ minute = (minute.length > 1 ? '' : '0')+minute;
 var server = net.createServer(function(socket){
   socket.end(year+'-'+month+'-'+day+' '+hour+':'+minute+"\n");
 });
+
 server.listen(port);
