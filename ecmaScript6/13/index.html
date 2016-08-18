@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    var cities = ['a', 'b', 'c', 'd'];
+
+    var [first, , , fourth] = ['a','b', 'c', 'd', 'e'];
+
+    console.log(first, fourth);
+
+
+    //--------------------
+    
+    var sandwich = {
+      title: 'Reuben',
+      price: 7,
+      description: 'Clevelands favorite sandwich',
+      ingredients: ['a', 'b', 'c', 'd']
+    };
+
+    console.log(sandwich.title);
+    console.log(sandwich.price);
+
+
+    var {title, price} = {
+      title: 'Reuben',
+      price: 7,
+      description: 'Clevelands favorite sandwich',
+      ingredients: ['a', 'b', 'c', 'd']
+    };
+
+
+    console.log(title);
+    console.log(price);
+
+    var vacation = {
+      destination : 'chile',
+      travelers : 2,
+      activity: 'skiing',
+      cost: 4000
+    };
+
+    function vacationMarketing({destination, activity}){
+      return `Come to ${destination} and do ${activity}`;
+    }
+
+    console.log(vacationMarketing(vacation));
+  </script>
+  <title>Destructuring Assignment</title>
+</head>
+<body>
+
+</body>
+</html>

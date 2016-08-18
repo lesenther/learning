@@ -1,0 +1,20 @@
+{
+  "name": "testing-webpack",
+  "version": "1.0.0",
+  "description": "testing webpack",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "es6"
+  ],
+  "author": "Logan Esenther",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.13.1"
+  }
+}

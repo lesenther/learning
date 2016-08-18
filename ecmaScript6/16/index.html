@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html { background: #111;  color: #444; font-family: PragmataPro, Consolas, monospace;}
+    h1 { margin: 1em;  }
+  </style>
+  <script type="text/javascript">
+    class Vehicle {
+      constructor(description, wheels){
+        this.description = description;
+        this.wheels = wheels;
+      }
+
+      describeYourself(){
+        console.log(`i am a ${this.description} with ${this.wheels} wheels`)
+      }
+    }
+
+    var coolSkiVan = new Vehicle('cool ski van', 4);
+
+    coolSkiVan.describeYourself();
+
+    // the idea of class inheritance allows you to create one super class and then you extend that class for reuse in different ways
+    class semiTruck extends Vehicle {
+      constructor() {
+        super('semi Truck', 18)
+      }
+    }
+
+
+    var groceryStoreSemi = new semiTruck();
+
+    groceryStoreSemi.describeYourself();
+  </script>
+  <title>Class Inheritance</title>
+</head>
+<body>
+  <h1>Testing Environment</h1>
+</body>
+</html>
